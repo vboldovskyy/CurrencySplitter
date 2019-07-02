@@ -1,4 +1,6 @@
-package com.cursor.homework5;
+package com.cursor.homework5.performance;
+
+import com.cursor.homework5.splitter.CurrencySplitter;
 
 public class PerformanceTest {
 
@@ -11,7 +13,7 @@ public class PerformanceTest {
     }
 
 
-     void testRange(int from, int to) {
+     public void testRange(int from, int to) {
         long minTime = Long.MAX_VALUE;
         int minValue = Integer.MAX_VALUE;
         long maxTime = -1L;
@@ -33,7 +35,7 @@ public class PerformanceTest {
             }
             counter += difference;
         }
-        averageTime = counter / (to - from + 1);
+        averageTime = counter / (to - from + 1); // +1 because value "to" is included;
         System.out.println("Split a range of values from " + from + " to " + to + " UAH");
         System.out.println("It took overall " + counter + " nanoseconds");
         System.out.println("The best time is " + minTime + " nanoseconds for " + minValue + " UAH");

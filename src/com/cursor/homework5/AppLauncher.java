@@ -1,16 +1,19 @@
 package com.cursor.homework5;
 
+import com.cursor.homework5.performance.PerformanceTest;
+import com.cursor.homework5.splitter.CurrencySplitter;
+
 import java.util.Random;
 
  class AppLauncher {
 
 
-     void testCurrencySplitting() {
+    private void testCurrencySplitting() {
         for (int i = 0; i < 6; i++)
             System.out.println(new CurrencySplitter(new Random().nextInt(10000)).toString());
     }
 
-     void testPerformance() {
+    private void testPerformance() {
 
         new PerformanceTest().testRange(24565, 35789);
     }

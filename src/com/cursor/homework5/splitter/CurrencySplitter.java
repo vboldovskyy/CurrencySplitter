@@ -1,4 +1,4 @@
-package com.cursor.homework5;
+package com.cursor.homework5.splitter;
 
 public class CurrencySplitter {
 
@@ -35,7 +35,7 @@ public class CurrencySplitter {
             }
         }
         String result = str.toString();
-        result = result.substring(0, result.length() - 2);
+        result = result.substring(0, result.length() - 2); //removing the last "+ " from the loop
         return "The sum of " + cashAmount + " is split as follows:" + result;
     }
 

@@ -1,5 +1,8 @@
 package com.cursor.homework5.splitter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CurrencySplitter {
 
     private static final int FIVE_HUNDRED = 500;
@@ -28,15 +31,14 @@ public class CurrencySplitter {
     }
 
     public String toString() {
-        StringBuilder str = new StringBuilder("  ");
+        List<String> amounts = new ArrayList<>();
         for (int i = 0; i < BILLS_AMOUNT; i++) {
             if (billCounts[i] != 0) {
-                str.append(billCounts[i]).append("*").append(denominations[i]).append(" + ");
+                amounts.add(billCounts[i]+"*"+denominations[i]);
             }
         }
-        String result = str.toString();
-        result = result.substring(0, result.length() - 2); //removing the last "+ " from the loop
-        return "The sum of " + cashAmount + " is split as follows:" + result;
+        String result = String.join(" + ", amounts);
+        return "The sum of " + cashAmount + " is split as follows: " + result;
     }
 
 }

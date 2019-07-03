@@ -1,7 +1,7 @@
-package com.cursor.homework5;
+package com.cursor.currencysplitter;
 
-import com.cursor.homework5.performance.PerformanceTest;
-import com.cursor.homework5.splitter.CurrencySplitter;
+import com.cursor.currencysplitter.performance.PerformanceTest;
+import com.cursor.currencysplitter.splitter.CurrencySplitter;
 
 import java.util.Random;
 

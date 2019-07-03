@@ -1,16 +1,8 @@
-package com.cursor.homework5.performance;
+package com.cursor.currencysplitter.performance;
 
-import com.cursor.homework5.splitter.CurrencySplitter;
+import com.cursor.currencysplitter.splitter.CurrencySplitter;
 
 public class PerformanceTest {
-
-
-    public void testOnce(int value) {
-        long timeBefore = System.nanoTime();
-        new CurrencySplitter(value);
-        long timeAfter = System.nanoTime();
-        System.out.println("Splitting " + value + " UAH took " + (timeAfter - timeBefore) + " nanoseconds.");
-    }
 
 
      public void testRange(int from, int to) {

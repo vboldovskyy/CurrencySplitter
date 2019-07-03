@@ -1,4 +1,4 @@
-package com.cursor.homework5;
+package com.cursor.currencysplitter;
 
 public class Main {
 

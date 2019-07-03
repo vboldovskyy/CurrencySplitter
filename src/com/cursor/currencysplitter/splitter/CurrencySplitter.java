@@ -1,4 +1,4 @@
-package com.cursor.homework5.splitter;
+package com.cursor.currencysplitter.splitter;
 
 import java.util.ArrayList;
 import java.util.List;
